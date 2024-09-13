@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Container } from "@/components/Container";
 
 // const fontSans = FontSans({
 //   subsets: ["latin"],
@@ -29,25 +30,11 @@ export default function RootLayout({
           // fontSans.variable
         )}
       >
-        <main className="flex min-h-screen flex-col items-center">
-          {/* <div
-            className="py-4 w-full flex items-center justify-center bg-background text-white"
-          >
-            <Link href={'/'}>
-              <Button variant={'ghost'}>
-                정보 저장소
-              </Button>
-            </Link>
-            <Link href={'/place'}>
-              <Button variant={'ghost'}>
-                서울 저장소
-              </Button>
-            </Link>
-          </div> */}
+        <div className="flex min-h-screen flex-col">
           {modal}
           {children}
           <div id="modal-root" />
-        </main>
+        </div>
       </body>
     </html>
   );
