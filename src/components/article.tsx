@@ -27,8 +27,8 @@ const HoverCard = ({ img, descriptions }: { img: string, descriptions: string[] 
         className={`absolute bottom-0 w-full bg-white p-4 transition-all duration-300 ease-in-out 'h-1/3 opacity-100'`}
       >
         <h2 className="text-lg font-semibold">Title of the Card</h2>
-        {descriptions.map(description =>
-          <p className="text-gray-600">{description}</p>
+        {descriptions.map((description, i) =>
+          <p className="text-gray-600" key={i}>{description}</p>
         )}
       </div>
     </div>
