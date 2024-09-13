@@ -22,20 +22,21 @@ export default function Home({
   return (
     <div className='grid grid-cols-4 gap-4 mx-32'>
       <div className='col-span-2'>
-        <CaseTile img="/image/place/comma1.jpeg" />
+        <CaseTile img="/image/fashion/iu.jpeg" descriptions={['상의 : #로씨로씨 Crochet Knit Bolero / 5만 9,000원', '원피스 : #이자벨마랑 V넥 자수 드레스 / 244만 원']} />
       </div>
       <div className='col-span-2'>
-        <CaseTile img="/image/place/pky.jpg" />
+        <CaseTile img="/image/fashion/ksj.jpg" descriptions={['✔#가방 - 르 로조 XS 탑 핸들백 / 99만 원',
+          '✔#자켓 - 롱샴 24FW 기모노 재킷 / 91만 원']} />
       </div>
       <div className='col-span-1'>
-        <CaseTile img="/image/place/sddler1.jpeg" />
+        <CaseTile img="/image/fashion/iu.jpeg" descriptions={['상의 : #로씨로씨 Crochet Knit Bolero / 5만 9,000원', '원피스 : #이자벨마랑 V넥 자수 드레스 / 244만 원']} />
       </div>
       <div className='col-span-1'>
-        <CaseTile img="/image/place/sddler2.jpeg" />
+        <CaseTile img="/image/fashion/iu.jpeg" descriptions={['상의 : #로씨로씨 Crochet Knit Bolero / 5만 9,000원', '원피스 : #이자벨마랑 V넥 자수 드레스 / 244만 원']} />
       </div>
       <div className='col-span-2'>
-        <CaseTile img="/image/place/tenone1.jpg" />
-      </div>
+        <CaseTile img="/image/fashion/ksj.jpg" descriptions={['✔#가방 - 르 로조 XS 탑 핸들백 / 99만 원',
+          '✔#자켓 - 롱샴 24FW 기모노 재킷 / 91만 원']} />      </div>
     </div >
   )
 }

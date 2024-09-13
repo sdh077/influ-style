@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 
-const HoverCard = ({ img }: { img: string }) => {
+const HoverCard = ({ img, descriptions }: { img: string, descriptions: string[] }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -27,7 +27,9 @@ const HoverCard = ({ img }: { img: string }) => {
         className={`absolute bottom-0 w-full bg-white p-4 transition-all duration-300 ease-in-out 'h-1/3 opacity-100'`}
       >
         <h2 className="text-lg font-semibold">Title of the Card</h2>
-        <p className="text-gray-600">This is a description that appears when you hover over the card.</p>
+        {descriptions.map(description =>
+          <p className="text-gray-600">{description}</p>
+        )}
       </div>
     </div>
   );
